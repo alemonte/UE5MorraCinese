@@ -1,0 +1,33 @@
+# Inizializzazione e clonazione
+git init          # Inizializza un nuovo repository Git
+git clone <repository> # Clona un repository remoto
+
+# Gestione delle modifiche
+git status        # Mostra lo stato delle modifiche nel repository
+git add <file>    # Aggiunge un file all'area di staging
+git add .         # Aggiunge tutti i file modificati all'area di staging
+git commit -m "<messaggio>" # Crea un nuovo commit con un messaggio descrittivo
+git commit --amend # Modifica l'ultimo commit
+
+# Branching e merging
+git branch        # Elenca i branch locali
+git branch <nome_branch> # Crea un nuovo branch
+git checkout <nome_branch> # Passa a un altro branch
+git merge <nome_branch>  # Unisce un branch nel branch corrente
+git branch -d <nome_branch> # Elimina un branch locale
+git checkout -b <nome_branch> # Crea un nuovo branch e ci passa
+
+# Sincronizzazione con il repository remoto
+git remote add origin <url_remoto> # Aggiunge un repository remoto
+git push -u origin <nome_branch> # Invia le modifiche locali al branch remoto (e imposta l'upstream)
+git pull          # Scarica le modifiche dal repository remoto e le unisce
+git fetch         # Scarica i contenuti remoti senza modificare il branch locale
+
+# Visualizzazione della cronologia
+git log           # Visualizza la cronologia dei commit
+git show <commit>  # Mostra i dettagli di un commit specifico
+git diff          # Mostra le differenze tra le modifiche
+
+# Altri comandi utili
+git reset <file>    # Rimuove un file dall'area di staging
+git clean -f      # Rimuove i file non tracciati
